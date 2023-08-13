@@ -1,0 +1,5 @@
+net.Receive("HealerNotif",function()
+    message = net.ReadString()
+    notification.AddLegacy( message,NOTIFY_ERROR,5)
+    surface.PlaySound( "garrysmod/balloon_pop_cute.wav" )
+end)
